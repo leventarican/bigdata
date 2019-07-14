@@ -1,0 +1,14 @@
+{
+	"developer": {
+		"programmingLanguage": [
+			{
+				"name": "java"
+			},
+			{
+				"name": "kotlin"
+			}
+		],
+		"name": "foobar",
+		"exp": "10"
+	}
+}

@@ -1,0 +1,8 @@
+# blacklist
+/*
+
+# whiteliste
+!.gitignore
+!README.md
+!apache-drill/
+!elasticsearch/

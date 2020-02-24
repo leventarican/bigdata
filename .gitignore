@@ -7,3 +7,4 @@
 !apache-drill/
 !elasticsearch/
 !apache-kafka/
+!apache-spark

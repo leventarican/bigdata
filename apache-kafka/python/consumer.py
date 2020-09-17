@@ -1,6 +1,6 @@
 import asyncio
 
-from confluent_kafka import Consumer, Producer
+from confluent_kafka import Consumer, Producer, TopicPartition, OFFSET_BEGINNING
 from confluent_kafka.admin import AdminClient
 
 async def consumer_task(topic_name):
@@ -12,11 +12,21 @@ async def consume(topic_name):
         {
             "bootstrap.servers": "PLAINTEXT://localhost:9092", 
             "group.id": "0",
-            "auto.offset.reset": "beginning"
+            # "auto.offset.reset": "beginning"
         }
     )
 
-    c.subscribe([topic_name])
+    topic_partition = TopicPartition(topic_name, 0, OFFSET_BEGINNING)
+    
+    # c.subscribe([topic_name])
+    # c.subscribe([topic_name], on_assign=on_assign)
+    c.assign([topic_partition])
+
+    assignment = c.assignment()
+    print(f"assignment: {assignment}")
+
+    position = c.position([topic_partition])
+    print(f"position: {position}")
 
     while True:
         message = c.poll(1.0)

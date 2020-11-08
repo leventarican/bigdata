@@ -1,5 +1,7 @@
 findspark
-pyspark
+py4j==0.10.7
 python-dateutil
 pathlib
-py4j
+kafka-python
+pypandoc
+pyspark==2.4.3

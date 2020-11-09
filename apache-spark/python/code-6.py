@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 
 # simple example for creating a dataframe
 
-spark=SparkSession.builder.appName('code-4').getOrCreate()
+spark=SparkSession.builder.appName('code-6').getOrCreate()
 
 schema=StructType().add("id","string").\
 add("name","string").add("programminglanguage", "string").\

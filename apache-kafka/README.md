@@ -46,3 +46,7 @@ cd python
 ```
 deactivate
 ```
+
+# Links
+* https://kafka.apache.org/27/documentation/streams/tutorial
+* https://jaceklaskowski.gitbooks.io/apache-kafka/content/kafka-demo-acl-authorization.html

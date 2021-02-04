@@ -28,11 +28,18 @@ kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap
 ```
 
 # python
+* setup virtual environment
 ```
 cd python
 virtualenv venv
 . venv/bin/activate
 pip install -r requirements.txt
+```
+
+* activate virtual environment
+```
+cd python
+. venv/bin/activate
 ```
 
 * deactivate virtual environment

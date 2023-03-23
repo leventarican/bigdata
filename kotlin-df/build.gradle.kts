@@ -11,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    // latest version of kotlin dataframe: https://plugins.gradle.org/plugin/org.jetbrains.kotlinx.dataframe/0.9.1
+    implementation("org.jetbrains.kotlinx:dataframe-core:0.9.1")
     testImplementation(kotlin("test"))
 }
 
